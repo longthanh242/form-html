@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Tạo 1 form cho người dùng đăng kí
+        Các thuộc tính hay dùng trong input
+        action: địa chỉ nơi nhận dữ liệu
+        type = "text": mặc định
+        type = "password"
+        type = "email" : bắt buộc khi nhập phải có @
+        type = "date" : tạo ra 1 ô nhập gồm ngày tháng năm
+        type = "time" :  thời gian
+        type = "color" : để hiển thị màu chọn
+        type = "checkbox" : hiển thị ô chọn
+        type = "radio" (các ô input mà có giá trị ở thuộc tính "name" giống nhau thì chỉ chọn dc 1)
+        button: nút bấm để gửi lên server
+        placeholder: gợi ý nhập
+        required: yêu cầu bắt buộc phải nhập
+        disabled: che các element không tương tác được
+        autocomplete = "on" : mặc định là on, nếu ="off" thì sẽ không hiển thị phần gợi ý nhập
+        id: dùng để định danh cho thẻ (element)
+     -->
+     <form action="" autocomplete="off">
+        <label for="">username</label>
+        <input type="text"><br>
+
+        <label for="email">email</label>
+        <input required id="email" type="email"><br>
+
+        <label for="">password</label>
+        <input type="password"><br>
+
+        <label for="">confirmpassword</label>
+        <input type="text"><br>
+        
+        <label for="">date</label>
+        <input type="date"><br>
+
+        <label for="">time</label>
+        <input type="time"><br>
+
+        <label for="">color</label>
+        <input type="color"><br>
+
+        <label for="">checkbox</label>
+        <input type="checkbox"><br>
+
+        <label for="">gender</label>
+        nam<input type="radio" name="gender12">
+        nữ<input type="radio" name="gender12">
+        <select name="" id="">
+            <option value="">Hà Nội</option>
+            <option value="">HCM</option>
+
+        </select><br>
+        <textarea name="" id="" cols="20" rows="5"></textarea><br>
+        <button disabled>register</button>
+    </form>
+</body>
+</html>
